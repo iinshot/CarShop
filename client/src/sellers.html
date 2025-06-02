@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCompany | Продавцы</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="content-wrapper">
+      <div class="entity-actions">
+        <button id="showAddForm" class="action-btn">
+          <i class="fas fa-plus"></i> Добавить
+        </button>
+        <button id="showGetForm" class="action-btn">
+          <i class="fas fa-search"></i> Получить
+        </button>
+        <button id="getAllBtn" class="action-btn">
+          <i class="fas fa-list"></i> Получить всех
+        </button>
+      </div>
+
+      <!-- Формы будут появляться здесь -->
+      <div id="formsContainer"></div>
+
+      <!-- Таблица для отображения результатов -->
+      <div class="data-table-container">
+        <table class="data-table" id="sellersTable">
+          <thead>
+            <tr>
+              <th>Номер продавца</th>
+                <th>Тип продавца</th>
+              <th>Номер заявки клиента</th>
+              <th class="change-th">Изменение</th>
+            </tr>
+          </thead>
+          <tbody id="sellersTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/api.js" type="module"></script>
+    <script src="js/sellers.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</body>
+</html>

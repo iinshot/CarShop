@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCompany | Управление</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="guest-theme">
+    <div class="app-wrapper">
+        <!-- Боковое меню -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>AutoCompany</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="nav-item" data-view="dashboard">
+                      <i class="fas fa-home"></i>
+                      <span>Главная</span>
+                    </li>
+                    <li class="nav-item" data-view="references">
+                        <i class="fas fa-book"></i>
+                        <span>Справочники</span>
+                    </li>
+                    <li class="nav-item" data-view="data">
+                        <i class="fas fa-database"></i>
+                        <span>Данные</span>
+                    </li>
+                    <li class="nav-item" data-view="reports">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Отчеты</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <div class="user-name">Администратор</div>
+                    <button class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i> Выйти
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Основное содержимое -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="page-title">Главная панель</h1>
+                <div class="header-actions">
+                    <div id="auth-buttons">
+                        <a href="auth.html" class="action-btn">Вход</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper" id="content-area">
+                <div class="welcome-message">
+                    <h2>Добро пожаловать в систему управления AutoCompany</h2>
+                    <p>Выберите раздел в боковом меню для начала работы</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
